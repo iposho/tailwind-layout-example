@@ -1,9 +1,10 @@
 import { version } from '../../package.json';
 
-const appConfig = {
+const app = {
   name: 'oracle.kuzyakin.me',
-  since: '2014',
+  since: '2021',
+  author: 'Pavel Kuzyakin',
   version,
 };
 
-export default appConfig;
+export default app;

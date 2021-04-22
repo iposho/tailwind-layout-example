@@ -1,4 +1,5 @@
 module.exports = {
+  parser: 'babel-eslint',
   env: {
     browser: true,
     es6: true,
@@ -31,6 +32,7 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [0],
+    'react/state-in-constructor': [0],
     'import/extensions': 'off',
     'no-unused-vars': 'error',
     'react/sort-comp': [1],
@@ -47,7 +49,11 @@ module.exports = {
     'react/jsx-props-no-spreading': [0],
     'react/react-in-jsx-scope': 'off',
     indent: ['error', 2],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/no-extraneous-dependencies':
+      [
+        'error',
+        { devDependencies: true },
+      ],
     quotes: ['error', 'single'],
     'jsx-a11y/anchor-is-valid':
       ['error',
@@ -60,7 +66,11 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
     'import/first': 'error',
-    'import/newline-after-import': ['error', { count: 1 }],
+    'import/newline-after-import':
+      [
+        'error',
+        { count: 1 },
+      ],
     'import/no-duplicates': 'error',
   },
 };

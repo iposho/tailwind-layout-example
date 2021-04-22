@@ -1,13 +1,16 @@
 import React from 'react';
 
-const Header = ({ name }) => (
-  <header className="container mx-auto pb-4 pt-4 flex justify-center">
-    <div className="flex items-center flex-no-shrink text-red-700 p-4">
-      <span
-        className="font-semibold text-2xls tracking-wide font-mono"
-      >
-        {name}
-      </span>
+import randomColor from '../../../tools/randomColor';
+
+const Header = ({ logo }) => (
+  <header
+    className="w-full flex"
+    style={{ backgroundColor: randomColor() }}
+  >
+    <div className="container mx-auto flex justify-between">
+      <div className="flex items-center flex-no-shrink p-4 flex-row">
+        <img className="h-10 lg:h-20" src={logo} alt="" />
+      </div>
     </div>
   </header>
 );
